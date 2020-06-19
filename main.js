@@ -46,3 +46,39 @@ console.log(classGrades); //prints [ 0, 2, 4 ]
 // enum Grades {
 //     A = 'Awesome!', B = 'Great!', C = 'Good!', D = 'Good Effort', F = 'Better luck next time' (here we can assign a string to each value)
 // }
+console.log(classGrades);
+let whoKnows = 4;
+whoKnows = 'foo';
+whoKnows = false;
+const darkestPlaceOnEarth = () => {
+    console.log('Marianas Trench');
+};
+let x = darkestPlaceOnEarth();
+const tweetLength = (message) => {
+    return message.length; //returns the length of the string object => number
+};
+//using interface the compiler can catch errors before the program is run.
+//if we modify the interface in a new object it will show an error.
+let dog = {
+    breed: "Border Collie",
+    weight: 25
+};
+const sayHappyBirthday = (name) => {
+    if (name) {
+        console.log(`Happy Birthday, ${name}!!`); //if param is a string
+    }
+    else {
+        console.log('Happy Birthday!'); //if param is null
+    }
+};
+sayHappyBirthday("Kobe");
+sayHappyBirthday(null); //we need to specify null or will return an error
+//we can make a parameter optional by adding a ? to the param when declaring it:
+const sayHappyBirthdayTwo = (name) => {
+    if (name) {
+        console.log(`Happy Birthday, ${name}!!`); //if param is a string
+    }
+    else {
+        console.log('Happy Birthday!'); //if param is null
+    }
+};
